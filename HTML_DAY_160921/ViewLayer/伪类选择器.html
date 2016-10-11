@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>伪类选择器</title>
+    <style type="text/css" media="screen">
+    	/**
+    	 * 1、a:link ;
+    	 * 2、a:visited ;
+    	 * 3、a:hover ;
+    	 * 4、a:active ;
+    	 */
+    	a{
+    		-webkit-transition: 2s;
+    		-moz-transition: 2s;
+    		-o-transition: 2s;
+    		transition: 2s;
+    	}
+    	a:link{
+			color: pink;
+    	}
+    	a:visited{
+    		color: red;
+    	}
+    	a:hover{
+			color:  gray;
+    	}
+    	a:active{
+			color: yellow;
+    	}
+    </style>
+</head>
+
+<body>
+<div style="font-size: 32px; text-align: center;">
+	<a href="https://www.google.com" title="">google</a>
+
+</div>
+</body>
+
+</html>

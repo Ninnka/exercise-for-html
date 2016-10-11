@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>form_exercise</title>
+    <link rel="stylesheet" type="text/css" href="../css/form_style.css">
+</head>
+
+<body>
+    <div id="form_container">
+        <form action="form_submit" method="get" accept-charset="utf-8">
+            <div class="line_container">
+                <label class="form_mainLabel" for="email-address">电子邮箱：</label>
+                <input class="form_mainInput" type="text/submit/hidden/button/etc" name="email-address" value="">
+            </div>
+            <div class="line_container">
+                <label class="form_mainLabel" for="email-address">设置密码：</label>
+                <input class="form_mainInput" type="text/submit/hidden/button/etc" name="email-address" value="">
+            </div>
+            <div class="line_container">
+                <label class="form_mainLabel" for="email-address">真实姓名：</label>
+                <input class="form_mainInput" type="text/submit/hidden/button/etc" name="email-address" value="">
+            </div>
+            <div class="line_container">
+                <div style="width: 160px; text-align: right; display: inline-block;">
+                    <label class="form_mainLabel" for="gender">性别：</label>
+                </div>
+                <input name="gender" type="radio" value="male">男
+                <input name="gender" type="radio" value="female">女
+            </div>
+            <div class="line_container">
+                <div style="width: 160px; text-align: right; display: inline-block;">
+                    <label class="form_mainLabel" for="gender">生日：</label>
+                </div>
+                <select name="birth_year">
+                    <option value="" selected="selected">请选择</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                    <option value="2014">2014</option>
+                    <option value="2013">2013</option>
+                    <option value="2012">2012</option>
+                    <option value="2011">2011</option>
+                    <option value="2010">2010</option>
+                    <option value="2009">2009</option>
+                    <option value="2008">2008</option>
+                    <option value="2007">2007</option>
+                    <option value="2006">2006</option>
+                    <option value="2005">2005</option>
+                    <option value="2004">2004</option>
+                    <option value="2003">2003</option>
+                    <option value="2002">2002</option>
+                    <option value="2001">2001</option>
+                    <option value="2000">2000</option>
+                </select>
+                <span>年</span>
+                <select name="birth_month">
+                    <option value="" selected="selected">——</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <span>月</span>
+                <select name="birth_month">
+                    <option value="" selected="selected">——</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                </select>
+                <span>日</span>
+            </div>
+            <div class="info_site">
+                <a href="#" title="">为什么要填写我的生日？</a>
+            </div>
+            <div class="line_container">
+                <div style="width: 160px; text-align: right; display: inline-block;">
+                    <label class="form_mainLabel" for="gender">我现在：</label>
+                </div>
+                <select name="身份">
+                    <option value="">请选择现在的身份</option>
+                    <option value="团员">团员</option>
+                    <option value="党员">党员</option>
+                    <option value="群众">群众</option>
+                </select>
+                <span style="font-size: 12px; margin-left: 8px;">（非常重要）</span>
+            </div>
+            <div class="line_container picCenter">
+                <img src="../public/imgs/vertifypic.jpg" alt="验证码图片">
+            </div>
+            <div class="line_container">
+                <div style="width: 160px; text-align: right; display: inline-block;">
+                    <label class="form_mainLabel" for="gender">验证码：</label>
+                </div>
+                <input class="form_vetifyInput" type="text/submit/hidden/button/etc" name="email-address" value="">
+                <div class="info_site" style="display: inline-block; margin-left: 24px;">
+                    <a href="#" title="" style="font-size: 12px;">看不清换一张？</a>
+                </div>
+            </div>
+            <div class="line_container" style="text-align: center;">
+                <img src="../public/imgs/submit_button.png" alt="注册">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

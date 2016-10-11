@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>common elements</title>
+</head>
+
+<body>
+    <!-- 1、block标签
+	<div>
+	<p>
+	<h1>...<h6>
+	<ol>...<ul>
+	<table>
+	<hr>
+	<form>
+	<pre>
+	独占一行
+	宽高可设置
+	宽度默认100%父容器
+	-->
+    <!-- 2、inline
+	<span> 无语义标签
+	<a> 超链接标签
+	<br> 换行标签
+	<i> 文字斜体
+	<em> <strong> 文字强调效果
+	<sub> 下标
+	<sup> 上标
+	<label> 标签
+	<code> 代码块
+	不独占一行
+	元素宽度，高度，行高，顶部与底部的编剧不可以设置 -->
+	<!-- 3、inline-block
+	<img> 图片标签
+	<input> 输入标签 -->
+	<!-- 有序列表
+	两个属性：
+	1、type：列表显示的序号类型：1,a,A,i,I
+	2、start： 其实下标,int类型
+	3、reversed： -->
+	<ol type="I" start="2">
+		<li>li_1</li>
+		<li>li_2</li>
+		<li>li_3</li>
+	</ol>
+	<ol type="a" start="2">
+		<li>li_1</li>
+		<li>li_2</li>
+		<li>li_3</li>
+	</ol>
+	<ol type="1" start="2">
+		<li>li_1</li>
+		<li>li_2</li>
+		<li>li_3</li>
+	</ol>
+
+	<!-- 定义列表项dl -->
+<!-- 	<dl>
+		<dt>apple</dt>
+		<dd>apple，orange</dd>
+	</dl> -->
+
+	<!-- pre 格式化标签
+	作用： 被包含在pre标签中的文本通常会保留空格或换行符，文本显示的大小相同-->
+	<!-- <pre>
+		Lorem ipsum dolor sit amet,
+		consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.
+		Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat.
+		Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur.
+		Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</pre> -->
+
+	<!-- table 表格标签 -->
+	<table border="2px" cellpadding="10px" cellspacing="10px" align="center">
+		<thead>
+			<tr>
+				<th>姓名</th>
+				<th>年龄</th>
+				<th>性别</th>
+				<th>其他</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr align="center">
+				<td>tim</td>
+				<td>10</td>
+				<td colspan="2" rowspan="" headers="">male</td>
+
+			</tr>
+			<tr align="center">
+				<td>john</td>
+				<td>20</td>
+				<td colspan="" rowspan="" headers="">male</td>
+				<td colspan="" rowspan="" headers="">其他</td>
+			</tr>
+			<tr align="center">
+				<td>petty</td>
+				<td>30</td>
+				<td colspan="" rowspan="" headers="">male</td>
+				<td colspan="" rowspan="" headers="">其他</td>
+			</tr>
+		</tbody>
+	</table>
+	<form action="#" method="get" accept-charset="utf-8">
+		<input type="text" name="username" id="form_username" value="" placeholder="please enter your name" />
+		<input type="password" name="password" id="form_password" value="" placeholder="please enter your password" />
+		<textarea name="comment_textarea" placeholder="enter your comment" rows="10"></textarea>
+		<br />
+		<input type="radio" name="sex" id="sex1" value="m" />male
+		<input type="radio" name="sex" id="sex2" value="f" />female
+		<br />
+		<input type="checkbox" id="fruit1" name="fruit" value="orange" />橙子
+		<input type="checkbox" id="fruit2" name="fruit" value="apple" />苹果
+		<input type="checkbox" id="fruit3" name="fruit" value="pineapple" />菠萝
+		<br />
+		<!-- 下拉列表 -->
+		<select name="program" multiple="multiplen">
+			<option value="c++">c++</option>
+			<option value="python">python</option>
+			<option value="java">java</option>
+			<option value="html5">html5</option>
+		</select>
+		<br />
+		<input type="submit" value="" />submit
+	</form>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+/*
+* @Author: lan
+* @Date:   2016-10-09 11:35:22
+* @Last Modified by:   lan
+* @Last Modified time: 2016-10-09 11:55:35
+*/
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 10px;
+}
+h1{
+	text-align: center;
+	font-size: 3rem;
+}
+p{
+	margin: 5px 0px 5px 5px;
+	font-size: 1.6rem;
+}
+pre{
+	font-size: 1.6rem;
+	margin: 10px 0 0 0;
+	padding: 4px 0;
+}
+.author_theme_wrapper{
+	min-height: 200px;
+	border: 1px solid red;
+}
+.theme_content{
+	border: 1px solid #978510;
+}
+.comment_wrapper{
+	min-height: 1000px;
+	border: 1px solid blue;
+}
+.comment_content{
+	border: 1px solid #455964;
+}
+header{
+	background: #750867;
+}
+aside{
+	font-size: 1.6rem;
+	height: 200px;
+	width: 200px;
+	position: absolute;
+	background: #856710;
+}
+.about_author{
+	bottom: 0px;
+	right: 0;
+}
+.exchange_link{
+	right: 0px;
+	top: 100px;
+}

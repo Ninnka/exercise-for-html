@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>table exercise</title>
+    <link rel="stylesheet" type="text/css" href="../css/table_style.css" />
+</head>
+
+<body>
+    <div id="table_container">
+        <table border="1px" cellspacing="0px">
+            <thead>
+                <tr align="center">
+                    <th colspan="2">日期</th>
+                    <th colspan="2">天气现象</th>
+                    <th>气温</th>
+                    <th>风向</th>
+                    <th>风力</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr align="center">
+                    <td rowspan="2" class="date_detail_td">22日星期五</td>
+                    <td class="date_days_td">白天</td>
+                    <td class="weather_img_td"><img src="../public/imgs/sun.png" alt="sun" /></td>
+                    <td class="weather_text_td">晴间多云</td>
+                    <td class="normal_td hightemptext">高温&nbsp7℃</td>
+                    <td class="normal_td">无持续风向</td>
+                    <td class="normal_td">微风</td>
+                </tr>
+                <tr align="center">
+                    <td class="date_days_td">夜间</td>
+                    <td class="weather_img_td"><img src="../public/imgs/night.png" alt="sun" /></td>
+                    <td class="weather_text_td">晴</td>
+                    <td class="normal_td">低温&nbsp-4℃</td>
+                    <td class="normal_td">无持续风向</td>
+                    <td class="normal_td">微风</td>
+                </tr>
+            </tbody>
+        </table>
+        <table border="1px" cellspacing="0px" style="margin-top: 3px;">
+            <tbody>
+                <tr align="center">
+                    <td rowspan="2" class="date_detail_td" style="color: #BE0006;">23日星期六</td>
+                    <td class="date_days_td">白天</td>
+                    <td class="weather_img_td"><img src="../public/imgs/sun.png" alt="sun" /></td>
+                    <td class="weather_text_td">晴</td>
+                    <td class="normal_td hightemptext">高温&nbsp9℃</td>
+                    <td class="normal_td">无持续风向</td>
+                    <td class="normal_td">微风</td>
+                </tr>
+                <tr align="center">
+                    <td class="date_days_td">夜间</td>
+                    <td class="weather_img_td"><img src="../public/imgs/cloud.png" alt="sun" /></td>
+                    <td class="weather_text_td">阴</td>
+                    <td class="normal_td">低温&nbsp-2℃</td>
+                    <td class="normal_td">无持续风向</td>
+                    <td class="normal_td">微风</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>clear float</title>
+    <style>
+    /* * {
+        text-align: center;
+    } */
+
+    .out {
+        width: 600px;
+        border: 4px solid red;
+        /* display: inline-block; */
+        overflow: hidden;
+        /* margin: 0 auto; */
+        margin-left: 200px;
+    }
+
+    .in_1 {
+        width: 300px;
+        height: 200px;
+        float: left;
+        background: blue;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- 解决办法
+	1、让父级元素也浮动
+	弊端：破坏文档结构
+	2、给父级加display：inline-block
+	弊端：失去了块级元素的
+	3、给父级设定固定高度
+	弊端： 不利于扩展，也就是说，如果子集元素的高度发生了变化，也要同时去修改父级元素的高度
+	4、给父级添加overflow：hidden
+	弊端：左右marigin失效
+	5、利用标签清除浮动
+	弊端：增加了标签
+	注意：浮动元素不能当作清除浮动的元素
+	6、使用伪类选择器在父级标签最后插入空文本 -->
+    <div class="out">
+        <div class="in_1"></div>
+    </div>
+</body>
+
+</html>

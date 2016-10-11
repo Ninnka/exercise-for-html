@@ -1,0 +1,110 @@
+/*
+* @Author: lan
+* @Date:   2016-09-23 10:22:01
+* @Last Modified by:   lan
+* @Last Modified time: 2016-09-23 11:39:56
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.list_hr {
+    opacity: 0.2;
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+root {
+    background-color: #D6D6D6;
+}
+
+.content_container {
+    margin: 0 auto;
+    max-width: 640px;
+    min-width: 500px;
+    padding: 10px 8px;
+    height: 500px;
+    border-left: 1px solid #D8D8D8;
+    border-right: 1px solid #D8D8D8;
+}
+
+.content_top_info {
+    position: relative;
+}
+
+.content_top_info span {
+    color: #42AF0A;
+    font-size: 20px;
+}
+
+.more_icon_rightalign {
+    position: absolute;
+    right: 0;
+}
+
+@media screen and (max-width: 500px) {
+	.more_icon_rightalign{
+		position: relative;
+		left: 20px;
+	}
+}
+
+.content_listitem_detail {
+    margin-top: 20px;
+}
+
+.flex_container {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.content_listitem_detail_flex_item {}
+
+.number_signal {
+    flex-basis: 30px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.book_cover {
+    flex-grow: 0;
+}
+
+.book_describe_detail {
+    flex-basis: 500px;
+    flex-grow: 10;
+    border: 0px;
+    margin-left: 13px;
+}
+
+.book_title {
+    margin-top: 5px;
+    font-family: serif;
+    font-size: 14px;
+    color: #282828;
+}
+
+.book_author {
+    margin-top: 8px;
+    font-size: 13px;
+    font-family: serif;
+    color: #878787;
+    opacity: 0.8;
+}
+
+.number_signal_notexpanded {
+    flex-basis: 30px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.book_describe_detail_author_notexpanded{
+	flex-basis: 100px;
+	flex-grow: 1;
+	font-size: 14px;
+	color: #262626;
+	font-family: serif;
+}
+

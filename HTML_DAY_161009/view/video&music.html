@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>video_music</title>
+    </head>
+
+    <body>
+        <audio src="../public/music/music.mp3" controls>
+            src：资源地址 controls：向用户展示播放按钮 当浏览器不支持该标签是，才显示标签内的内容 loop：文件循环播放 autoplay：让文件自动播放 preload：用来缓存大的文件
+        </audio>
+        <video controls poster="" autoplay>
+            loop：文件循环播放 autoplay：让文件自动播放 preload：用来缓存大的文件
+            <!-- 兼容性写法，在内部用source标签引用 -->
+            <source src="../public/video/video.mp4" type="video/mp4" media="" />
+            <source src="1.wma" type="video/x-ms-wma" media="" />
+            <source src="1.3gp" type="video/3gp" media="" />
+        </video>
+        <!--
+		input的type属性
+		1、text
+		2、password
+		3、radio
+		4、checkbox
+		5、button
+		6、submit
+		7、reset
+		8、file
+		9、image
+		html新增type
+		1、email
+		2、number
+		3、url
+		4、range
+		5、date
+		6、month
+		7、week
+		8、time
+		9、datetime
+		10、datetime-local
+		11、search
+		12、tel
+		 -->
+        <hr/>
+        <form action="" method="get" accept-charset="utf-8">
+            <input type="email" name="" />邮件
+            <br />
+            <input type="number" name="" step="2" />数字
+            <br />
+            <input type="url" name="" />地址
+            <br />
+            <input type="range" name="" min="0" value="100" max="100" />取值范围
+            <br />
+            <input type="date" name="" />日期：年月日
+            <br>
+            <input type="month" name="">日期：年月
+            <br />
+            <input type="week">日期：年周
+            <br />
+            <input type="time" name="">日期：时分
+            <br/>
+            <input type="datetime">日期：国际同一时间：
+            <br />
+            <input type="datetime-local">日期：本地时间：
+            <br/>
+            <progress value="30" max="100">
+
+            </progress>
+            <dl>
+            	<dt>title</dt>
+            	<dd>describetion1</dd>
+            	<dd>describetion2</dd>
+            	<dd>describetion3</dd>
+            </dl>
+            <br>
+            <input type="submit" name="" />
+        </form>
+        <form oninput="result.value=parseInt(num1.value)+parseInt(num2.value)">
+            <input type="number" name="num1" value="10" id="num1">+
+            <input type="number" name="num2" value="20" id="num2">=
+            <output name="result"></output>
+        </form>
+    </body>
+
+</html>

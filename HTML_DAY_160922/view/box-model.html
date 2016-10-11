@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>box-model</title>
+    <style type="text/css" media="screen">
+    #id1 {
+        width: 300px;
+        height: 300px;
+        background: red;
+    }
+
+    #id2 {
+        width: 500px;
+        height: 300px;
+        background: blue;
+    }
+
+    .div_mt {
+        /* margin-top: 100px; */
+        background: blue;
+        height: 100px;
+        /* margin-left: 100px; */
+    }
+
+    .div_mt2 {
+        /* margin-top: 100px; */
+        background: blue;
+        height: 100px;
+    }
+
+    .div_out {
+        height: 600px;
+        background: red;
+        /* margin-top: 150px; */
+        /* border: 2px solid black; */
+        /* overflow: hidden; */
+        /* padding-top: 100px;
+        box-sizing: border-box; */
+    }
+
+/*     .class1{
+    	width: 300px;
+    	height: 400px;
+    	background: red;
+    }
+    .class2{
+    	width: 400px;
+    	height: 500px;
+    	background: blue;
+    } */
+    </style>
+</head>
+
+<body>
+    <!--     	盒模型：每一个html元素都可以看成一个盒模型
+    	1、一个盒子的特点（border,padding,margin）
+
+    	元素的宽高计算
+    	元素的高度 = border-top + padding-top + height + padding-bottom + border-bottom
+		元素的宽度 = border-left + padding-left + width + padding-right + border-right
+
+		margin:
+		margin-top: 上外边距
+		margin-bottom: 下外边距
+		margin-left: 左外边距
+		margin-right: 右外边距
+		语法：
+		1.margin: (上，右，下，左)px;
+		2.margin: (上下，左右)px;
+		依次推类 -->
+    <div class="div_out">
+        <div class="div_mt">123</div>
+        <div class="div_mt2">234</div>
+        ads
+    </div>
+    当两个元素垂直排列时：
+    1、当父元素嵌套子元素持之排列时,父元素取第一个元素的margin-top未偏移量，向下偏移。
+    2、当两兄弟垂直排列时，上面的一个margin-bottom与下面的margin-top去最大值。
+
+    第一点的解决方法：1、父元素加入边框属性；2、父元素加入overflow：hidden属性；
+
+</body>
+
+</html>

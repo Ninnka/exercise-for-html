@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>兼容性实例</title>
+    </head>
+
+    <body>
+    1、并列一行的元素，第一个元素没有设置浮动，第二个元素设置了向左浮动，IE6，IE7下两个元素之间会多出3px的空隙
+    解决办法：如果一行又一个元素设置了浮动，那么给其他元素都设置浮动
+
+    2、并列一行的元素，第一个元素设置向左浮动，第二个元素向右浮动，那么IE6，7下，第二个元素会拆行显示
+
+    3、块状属性标签设置浮动，并且有水平方向的margin之时，在IE6下，水平方向的margin会加倍。
+    解决办法：在块级元素样式中加display：inline
+
+    4、li元素无浮动，li里面的元素设置浮动，IE6，7下的li就会多出来3px的间隙
+    解决办法：li元素增加float属性或者使用vertical-top:align: top;
+
+    <!-- 5、在IE6，7下图片有间隙 -->
+
+    6、在IE6下面不支持图片固定定位（fixed）
+
+    7、IE6不支持border：red 1px dotted;中的最后一个参数
+
+    8、IE6下当父级元素有边框时，子元素的margin不起作用
+
+    9、在IE6下面的png半透明图片在IE6下不起作用
+    解决办法：采用IE专属框架js插件
+    DD_belatedPNG.js
+
+    10、在IE6下面的！important失效
+    </body>
+
+</html>

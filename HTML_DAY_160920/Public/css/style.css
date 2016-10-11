@@ -1,0 +1,57 @@
+/*
+* @Author: lan
+* @Date:   2016-09-20 10:39:35
+* @Last Modified by:   lan
+* @Last Modified time: 2016-09-20 16:52:43
+*/
+
+
+/**
+ * command: @f+;
+ */
+
+@font-face {
+    font-family: 'FontName';
+    font-weight: normal;
+    font-style: normal;
+    src: url('FileName.eot');
+    src: url('FileName.eot?#iefix') format('embedded-opentype'), url('FileName.woff') format('woff'), url('FileName.ttf') format('truetype'), url('FileName.svg#FontName') format('svg');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+/*     width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background: red; */
+    width: 1280px;
+    height: 720px;
+    background-color: red;
+}
+
+.custom_background_image {
+    font-size: 0px;
+    margin: 0 auto;
+    color: #151922;
+    background-image: url('../imgs/bg2.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow: scroll;
+
+    /* background 属性简短写法 */
+	/*background: [background-color] [background-image] [background-repeat] [background-attachment] [background-position];*/
+}
+
+
+/* 错误检测机制测试代码 */
+
+* {}
+
+p {}
+

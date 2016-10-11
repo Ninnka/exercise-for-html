@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css" media="screen">
+    /**
+     * -elements selectors-
+     * 1、common selectors
+     * 2、type selectors
+     * 3、id selectors
+     * 4、class selectors
+     */
+
+    * {
+        font-size: 24px;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    #div_id {
+        background: gray;
+        text-decoration: line-through;
+    }
+
+    .div_class {
+        color: white;
+        background: #252523;
+        text-decoration: underline;
+    }
+    /**
+     * group selectors
+     */
+
+    #div_id,
+    .div_class{
+        margin: 0 auto;
+        width: 400px;
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+    }
+
+    /**
+     * test
+     */
+    .class2, .class3, #id2, #id3, p{
+        background: yellow;
+        margin: 0 auto;
+        width: 400px;
+        height: 200px;
+        line-height: 200px;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="div_id">
+        我是有id样式的div,单行文本居中
+    </div>
+    <div class="div_class">
+        我是有id样式的div,单行文本居中
+    </div>
+    <div class="class2">div_class2_我们有相同的样式</div>
+    <div class="class3">div_class3_我们有相同的样式</div>
+    <div id="id2">div_id2_我们有相同的样式</div>
+    <p id="id3">p_id3_我们有相同的样式</p>
+    <p>p_我们有相同的样式</p>
+</body>
+
+</html>

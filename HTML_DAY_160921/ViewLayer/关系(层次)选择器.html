@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>关系选择器</title>
+    <style type="text/css" media="screen">
+    /**
+	    	 * 1、后代(包含)选择器
+	    	 * 2、子选择器
+	    	 * 3、相邻选择器
+	    	 * 4、兄弟选择器
+	    	 */
+
+    .div_out_class div {
+        margin: 0 auto;
+        width: 400px;
+        height: 200px;
+        background: gray;
+        line-height: 200px;
+        text-align: center;
+    }
+
+    .class2 div,
+    .class2 p {
+        background: red;
+        margin: 0 auto;
+        width: 400px;
+        height: 200px;
+    }
+
+    #id4>p {
+    	background: blue;
+        margin: 0 auto;
+        width: 400px;
+        height: 200px;
+    }
+
+    #id5 p~div{
+    	font-size: 2em;
+    	background: yellow;
+        margin: 0 auto;
+        width: 400px;
+        height: 200px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="div_out_class">
+        <div>我是一个没有class和id的内部div</div>
+    </div>
+    <div id="div_out_id">
+        <div class="class2">
+            <div>class2内部的div</div>
+            <p>class2内部的p</p>
+        </div>
+    </div>
+    <div>
+        <div id="id4">
+            <p>内部p</p>
+        </div>
+    </div>
+    <div id="id5">
+    	<p>inlint_p</p>
+    	<div>inline_div</div>
+    </div>
+</body>
+
+</html>

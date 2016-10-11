@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>border-application</title>
+    <style type="text/css" media="screen">
+    .div_border {
+        width: 500px;
+        height: 300px;
+        border: 10px dashed red;
+        background: blue;
+        color: white;
+    }
+
+    .trans {
+        width: 0px;
+        height: 0px;
+        border-left: 100px solid red;
+        border-bottom: 100px solid blue;
+        border-top: 100px solid yellow;
+        border-right: 100px solid purple;
+        border-bottom-left-radius: 100px;
+        border-top-right-radius: 100px;
+        /* border-radius: 0 0 0 100px; */
+        /* border-radius写法 从左上角开始顺时针旋转
+			border-radius: (left-top), (right-top), (left-bottom), (right-bottom)*/
+    }
+    </style>
+</head>
+
+<body>
+    <!--
+	标签元素的边框
+	border-width： 边框宽度
+	border-style： 边框线的样式  attr:1.solid; 2.dashed; 3.dotted
+	border-color： 边框线的颜色
+	border复合写法
+	border: width, style, color
+
+	 -->
+    <div class="div_border">我是有边框的div</div>
+    <div class="trans">
+    </div>
+</body>
+
+</html>

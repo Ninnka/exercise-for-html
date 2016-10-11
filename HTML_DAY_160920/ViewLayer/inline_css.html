@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <style type="text/css" media="screen">
+    /* csslint order-alphabetical: false, important: false, ids: false, empty-rules: false, */
+    /* id selectors */
+
+    #div_id {
+        background: yellow;
+        line-height: 100px;
+        width: 300px;
+        color: blue;
+        text-align: center;
+        margin: 0 auto;
+    }
+    /* class selectors */
+
+    .div_cl {
+        background: yellow;
+        line-height: 100px;
+        width: 300px;
+        color: blue;
+        text-align: center;
+        margin: 0 auto;
+    }
+    /* class selectors and children selectors */
+
+    .div_cl:last-child {
+        background: red;
+        line-height: 100px;
+        width: 300px;
+        color: blue;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .fruit{
+        margin: 0 auto;
+        background: purple;
+        line-height: 100px;
+        width: 300px;
+    }
+
+    .animal{
+        margin: 0 auto;
+        background: gray;
+        line-height: 100px;
+        width: 300px;
+    }
+
+    /* signal selectors */
+    div{
+        text-align: center;
+    }
+
+    p {}
+    </style>
+</head>
+
+<body>
+    <div id="div_id">
+        我是有id的div
+    </div>
+    <div class="div_cl">
+        我是有class的div
+    </div>
+    <div class="div_cl">
+        我是有class的div
+    </div>
+    <div class="div_cl">
+        我是有class的div
+    </div>
+    <div class="div_cl">
+        我是有calss的div
+    </div>
+    <div class="fruit">apple</div>
+    <div class="fruit">banana</div>
+    <div class="animal">dog</div>
+    <div class="animal">cat</div>
+    <div class="animal">monkey</div>
+    <div class="animal">bird</div>
+</body>
+
+</html>

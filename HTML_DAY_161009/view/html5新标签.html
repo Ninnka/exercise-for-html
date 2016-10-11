@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>html5新标签</title>
+        <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+        <style type="text/css" media="screen">
+        article {
+            border: 1px solid red;
+            padding: 20px 0;
+            margin: 10px 0;
+        }
+
+        section {
+            border: 1px solid #275747;
+            padding: 20px 0;
+            margin: 10px 0;
+        }
+
+        nav {
+            border: 1px solid #123785;
+            padding: 20px 0;
+            margin: 10px 0;
+        }
+
+        aside {
+            border: 1px solid #968463;
+            padding: 20px 0;
+            margin: 10px 0;
+        }
+
+        header {
+            border: 1px solid #831064;
+            padding: 20px 0;
+            margin: 10px 0;
+        }
+
+        hgroup {
+            border: 1px solid #756183;
+            padding: 20px 0;
+            margin: 10px 0;
+        }
+
+        footer {
+            border: 1px solid #196406;
+            padding: 20px 0;
+            margin: 10px 0;
+        }
+
+        address {
+            border: 1px solid #756120;
+            padding: 20px 0;
+            margin: 10px 0;
+        }
+
+        figure {
+            border: 1px solid #171090;
+            padding: 20px 0;
+            margin: 10px 0;
+        }
+
+        figcaption {
+            border: 1px solid #758823;
+            padding: 20px 0;
+            margin: 10px 0;
+        }
+        </style>
+    </head>
+
+    <body>
+        <article>
+            article用法：定义了独立的内容，内容通常是一篇帖子，一篇博客，一篇短文，一条完整的回复，评论etc 内容可以使用header，footer，section，article标签 提示: 每一个article标签的内部结构应该是相似的
+        </article>
+        <section>
+            section用法：是洁面进行分区，元素通常可由标题和内容组合 注意： 内容一般包含一个h1-h6,可以包含article，嵌套section section与article的区别 1.article侧重于一篇独立的文章或一篇完整的文章 2.section侧重于对一个页面内容进行分类 想要表达一块独立完整的文章我们就用article 如果想把一块区域分成几个部分我们就用section
+            <h1>h1标题</h1>
+            <p>content:Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+        <nav>
+            nav用法：用于定义页面上的导航条
+        </nav>
+        <aside>
+            aside用法：定义了当前页面的附属信息，通常aside元素来渲染侧边栏 适用范围： 可以显示广告宣传，作者介绍，web应用，相关链接，当前内容简介
+        </aside>
+        <header id="header" class="">
+            header主要用于article元素定义的文档头部信息（如文章标题） 该元素内部可以包含h1~h6，hgroup，span等 还可以放一些logo
+        </header>
+        <hgroup>
+            hgroup组织多个h1~h6的元素，只能放标题
+            <h1>h1</h1>
+            <h4>h4</h4>
+        </hgroup>
+        <footer>
+            footer元素定义了文档的页脚，通常包含文档的版本信息，作者版权信息
+        </footer>
+        <address>
+            address标签通常与footer一起用，可以放作者相关信息
+        </address>
+        <figure>
+            figure表示一个自我独立的内容区域 通常包含一个标题说明：figcaption
+            内容可以是图片，图表，代码片段，或者跟主内容相关的图解，他可以放到主内容布局里面，也可以放到外面
+            <figcaption>figure的标题说明</figcaption>
+        </figure>
+    </body>
+
+</html>

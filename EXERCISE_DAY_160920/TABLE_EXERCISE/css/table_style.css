@@ -1,0 +1,55 @@
+/*
+* @Author: lan
+* @Date:   2016-09-21 20:42:31
+* @Last Modified by:   lan
+* @Last Modified time: 2016-09-22 09:27:59
+*/
+body{
+	margin: 0;
+	padding: 0;
+	background: #D6D6D6;
+}
+
+#table_container{
+	width: 858px;
+    margin: 10% auto 0;
+}
+table{
+	border-color: #879FD1;
+}
+
+.date_detail_td{
+	width: 140px;
+	background: #F1F5FB;
+}
+
+.date_days_td{
+	width: 80px;
+	background: #F1F5FB;
+}
+
+.weather_img_td{
+	width: 70px;
+}
+
+.weather_text_td{
+	width: 150px;
+}
+
+.normal_td{
+	width: 120px;
+}
+
+table th{
+	padding: 12px 0;
+	background: #D3DCF8;
+}
+
+table td{
+	background: #FFFFFF;
+	padding: 7px 3px;
+}
+
+.hightemptext{
+	color: #DC3009;
+}

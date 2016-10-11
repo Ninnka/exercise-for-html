@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>css文件书写格式</title>
+    </head>
+    <body>
+    	1、尽量将样式卸载一个单独的css文件里面在head里面去引用
+    	1）实现了内容与样式的分离，易于维护
+    	2）减少页面的体积
+    	3）css文件可以被缓存，重用，维护成本低
+
+    	2、不要使用@import
+
+    	3、避免使用复杂的选择器，层级越少越好建议选择器嵌套最好不要超过三层
+    	优点：
+    	减少css文件大小，提高页面加载性能，浏览器解析更高效
+
+    	4、精简页面样式，去掉不用的样式
+
+    	5、利用css继承来减少
+    	常见的继承属性：
+    	color
+    	font-size
+    	font-family
+
+		不可继承属性：
+		position
+		display
+		float
+
+		6、命名规范
+		头：header
+		导航：nav
+		侧栏：sider
+		栏目：column
+		外围控制布局：wrapper
+		登录条：loginbar
+		标志：logo
+		广告：banner
+		页面主题：main
+		热点：hot
+		新闻：news
+		子导航：subnav
+		搜索：search
+		友情链接：link_exchange
+		页脚：footer
+		版权：copyright（licensed）
+		滚动：scroll
+		内容：content
+		标签：tags
+		文章列表：list
+		小技巧：tips
+		栏目标题：title
+		加入：join
+		指南：guide
+		服务：service
+		注册：register
+		状态：status
+		投票：vote
+		合作伙伴：parter
+		主导航：mainnav
+
+		7、提取利用率高的重复样式为公共样式
+		简单地说就是把相同的样式单独变成一个引用，这样可以有效减少代码量，易于维护
+
+		8、css属性位置
+
+		9、id使用原则
+		在布局一个页面时，如果页面的某一个模块在当前页面是唯一的，采用id，否则用class
+    </body>
+</html>

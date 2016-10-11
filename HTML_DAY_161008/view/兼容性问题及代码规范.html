@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>兼容性问题及代码规范</title>
+    </head>
+
+    <body>
+    	1、世面上常用浏览器：
+    	IE系列，Webkit内核， Gecko内核
+
+    	2、css hack
+    	在CSS样式中加入一些特殊符号，针对低等级IE浏览器设置CSS属性
+    	还可以用来解决有些属性在不同浏览器显示不一致的问题
+    	style{
+    		margin-left:20px;	//在IE6环境下会变成40px，有双倍距离
+    		_margin-left:20px;	//这个没有
+    	}
+    	分类：
+    	1.属性级：比如IE6识别"_","*"，IE7识别"*"
+		2.选择器级：例如IE6能识别*html{},IE7能识别*+html{}或者*:first-child(){}
+		3.IE条件注释hack
+		这个是微软从IE5开始提供的一淘非逻辑语句,只有IE内核的才能执行
+		<!--[if IE]><!-code><![endif]-->
+
+		1：属性级hack具体表现：
+		color: red;所有浏览器都能识别不
+		_color: red;只有IE6浏览器能识别
+		*color: red;IE6，7都能识别
+		+color: red;只有IE6，7能识别
+		[color: red;只有IE6，7能识别
+		color: red\9;只有IE6，7，8，9能识别
+		color: red\9\0;只有IE9能识别
+		color: red\0;只有IE8,9能识别
+		color: red !important;只有IE6不能识别
+
+		2：CSS选择器级hack：
+		*[elementselector] #demo{color: red;}只有IE6能识别
+		*+[elementselector] #demo{color: red;}只有IE7能识别
+		body:nth-of-type(1)
+		#demo{};IE9+,FF3.5+,chrome都能识别
+
+		head：first-child+body #demo{}；IE7，FF都能识别
+		:root #demo{};只有IE9能识别
+
+		3：<!--[if IE]><!-code><![endif]-->
+		<!--[if !IE]>
+		您使用不是 Internet Explorer
+		<![endif]-->
+    </body>
+
+</html>

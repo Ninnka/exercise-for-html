@@ -1,0 +1,55 @@
+/*
+* @Author: lan
+* @Date:   2016-09-26 19:55:47
+* @Last Modified by:   lan
+* @Last Modified time: 2016-09-27 19:21:17
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    margin: 0 auto;
+    border: 2px solid black;
+    padding: 20px 10px 0;
+    width: 1850px;
+}
+
+#root::after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.float_item {
+    float: left;
+}
+
+.item_first {
+    width: 720px;
+    height: 450px;
+    box-shadow: 1px 1px 10px 1px #AAAAAA;
+    margin-left: 20px;
+}
+
+.item_first img {
+    width: 720px;
+    height: 450px;
+}
+
+.item_other {
+    width: 350px;
+    height: 215px;
+    margin-bottom: 19px;
+    margin-left: 20px;
+    box-shadow: 1px 1px 15px 2px #AAAAAA;
+}
+
+.item_other img {
+    width: 350px;
+    height: 215px;
+}
+

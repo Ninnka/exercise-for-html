@@ -1,0 +1,48 @@
+/*
+* @Author: lan
+* @Date:   2016-09-23 20:51:24
+* @Last Modified by:   lan
+* @Last Modified time: 2016-09-23 21:17:39
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.content_container {
+    max-width: 240px;
+    height: 340px;
+    border: 1px solid #888888;
+    margin: 0 auto;
+    padding: 0px 12px 4px;
+}
+
+.top_info {
+    height: 52px;
+    line-height: 52px;
+    font-size: 18px;
+    color: #414141;
+}
+
+.content_main_text {
+    display: inline-block;
+    margin-left: 6px;
+}
+
+.text_main {
+    color: #333333;
+}
+.text_main span {
+	font-family: serif;
+	font-size: 15px;
+}
+.text_other{
+	margin-top: 8px;
+	color: #979797;
+}
+
+img {
+    vertical-align: top;
+}
+

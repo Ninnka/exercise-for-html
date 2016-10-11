@@ -1,0 +1,58 @@
+/*
+* @Author: lan
+* @Date:   2016-10-10 17:34:32
+* @Last Modified by:   lan
+* @Last Modified time: 2016-10-10 17:50:14
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    border: 1px solid red;
+    font-size: 0px;
+}
+
+div {
+    height: 100px;
+}
+
+.item {
+    display: inline-block;
+    background: blue;
+    width: 30%;
+    vertical-align: top;
+}
+
+.item_middle {
+    margin: 0 5% 20px 5%;
+}
+
+@media screen and (max-width: 960px) and (min-width: 641px) {
+    .item {
+        width: 48%;
+        margin: 0 0 20px 0;
+    }
+    .item_middle {}
+    .item_odd {
+        margin: 0 2% 20px 0;
+    }
+    .item_even {
+        margin: 0 0 20px 2%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .item {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+    .item_middle {}
+    .item_odd {}
+    .item_even {}
+}
+

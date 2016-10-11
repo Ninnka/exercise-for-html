@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <!-- <title>priority</title> -->
+    <style type="text/css" media="screen">
+    /* csslint order-alphabetical:false, ids:false; */
+
+    	body{
+    		color: gray;
+    		font-size: 30px;
+    	}
+
+    	#id1{
+    		width: 200px;
+    		height: 100px;
+    		background: black;
+    	}
+
+    	.class1{
+    		width: 50px;
+    		height: 100px;
+    		background: blue;
+    	}
+    </style>
+</head>
+
+<body>
+    <!-- 优先级： 当样式发生冲突时，优先选择那个样式，数值越大权重越大
+	id: 100
+	class: 10
+	element: 1 -->
+</body>
+<div id="id1" class="class1_test" style="background: yellow">
+	This is a div
+</div>
+
+</html>

@@ -1,0 +1,334 @@
+/*
+* @Author: lan
+* @Date:   2016-09-21 19:24:19
+* @Last Modified by:   lan
+* @Last Modified time: 2016-09-23 10:46:22
+*/
+
+body {
+    min-width: 1125px;
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    /* width: 1125px; */
+    margin: 0 auto;
+}
+
+
+/**
+ * top title
+ */
+
+#top_title_container {
+    font-size: 0;
+    line-height: 130px;
+    position: relative;
+    height: 130px;
+    text-align: center;
+    border-bottom: 2px solid #7f7a7d;
+    background: #f8f8f8;
+    background-image: url('../Public/imgs/back_arrow.png');
+    background-repeat: no-repeat;
+    background-position: 50px 50%;
+}
+
+.top_title_content_title_span {
+    font-size: 61px;
+    vertical-align: middle;
+    letter-spacing: 16px;
+    color: #565454;
+}
+
+
+/**
+ * already attain
+ */
+
+#already_attain_container {
+    height: 568px;
+    padding-bottom: 18px;
+    background: #ffffd5;
+}
+
+.already_attain_content_top_info {
+    font-size: 0;
+    line-height: 56px;
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 48px;
+}
+
+.already_attain_content_top_info_redspan {
+    font-size: 56px;
+    vertical-align: middle;
+    color: #e60012;
+}
+
+.already_attain_content_top_info_horn_img {
+    margin-left: 48px;
+    vertical-align: middle;
+}
+
+.already_attain_content_top_info_time {
+    font-size: 35px;
+    margin-left: 4px;
+    vertical-align: middle;
+    color: #5e5859;
+}
+
+.already_attain_content_top_info_moneymount {
+    font-size: 42px;
+    margin-left: 16px;
+    vertical-align: middle;
+    color: #e60012;
+}
+
+.already_attain_content_gridview {
+    width: 1028px;
+    height: 434px;
+    margin: 16px auto 0;
+    text-align: center;
+}
+
+.already_attain_content_gridview_item {
+    display: inline-block;
+    width: 476px;
+    height: 193px;
+    margin: 14px 12px;
+    vertical-align: bottom;
+    border-radius: 10px;
+    background: #fa3530;
+}
+
+.gridview_item1 {
+    background-image: url('../Public/imgs/red_packet.png');
+    background-repeat: no-repeat;
+    background-position: 12% center;
+    font-size: 48px;
+    text-align: end;
+    color: #FFFFFF;
+}
+
+.gridview_item1 span {
+    font-size: 84px;
+    margin-right: 20px;
+    font-family: monospace;
+    letter-spacing: -5px;
+}
+
+.gridview_item1 div {
+    position: relative;
+    right: 60px;
+    top: 30px;
+}
+
+.gridview_item2 {
+    background-image: url('../Public/imgs/wifi.png');
+    background-repeat: no-repeat;
+    background-position: 12% center;
+    font-size: 48px;
+    text-align: end;
+    color: #FFFFFF;
+}
+
+.gridview_item2 span {
+    font-size: 84px;
+}
+
+.gridview_item2 div {
+    position: relative;
+    right: 60px;
+    top: 30px;
+}
+
+.gridview_item3 {
+    background-image: url('../Public/imgs/bingo.png');
+    background-repeat: no-repeat;
+    background-position: 12% center;
+    background-size: 150px 150px;
+    text-align: end;
+}
+
+.gridview_item3 span {
+    font-size: 48px;
+    letter-spacing: 9px;
+    color: #ffffff;
+    position: relative;
+    top: 40%;
+    right: 60px;
+}
+
+.special_gridview_item {
+    font-size: 49px;
+    line-height: 193px;
+    box-sizing: border-box;
+    text-align: center;
+    letter-spacing: 6px;
+    color: #f9a09e;
+    border: 2px dashed;
+    background: #ffffd5;
+}
+
+.notopen_collections_container {
+    height: 482px;
+    background: #f51829;
+    position: relative;
+}
+
+.notopen_collections_top_info {
+    font-size: 56px;
+    line-height: 138px;
+    width: 950px;
+    height: 138px;
+    margin: 0 auto;
+    vertical-align: text-bottom;
+    color: white;
+}
+
+.notopen_collections_top_info span {
+    font-size: 82px;
+    position: relative;
+    top: 10px;
+    color: #fff000;
+}
+
+.notopen_collections_threecartoonpic {
+    position: relative;
+    /* display: flex; */
+    width: 965px;
+    height: 300px;
+    margin: 0 auto;
+    background-image: url('../Public/imgs/zhifumanpic_1.png'), url('../Public/imgs/zhifumanpic_2.png'), url('../Public/imgs/zhifumanpic_3.png');
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: left center, center, right center;
+}
+
+.threecartoonpic_infotext {
+    font-size: 28px;
+    line-height: 64px;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    text-align: center;
+    color: #f51829;
+    border-radius: 32px;
+    background: #fff;
+    /* flex-grow: 1; */
+}
+
+.threecartoonpic_banner_next {
+    font-size: 0;
+    line-height: 92px;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    width: 78px;
+    height: 92px;
+    margin-top: -46px;
+    text-align: center;
+    opacity: .8;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: #982328;
+}
+
+.threecartoonpic_banner_next img {
+    vertical-align: middle;
+}
+
+.banner_indicator_container {
+    height: 26px;
+    text-align: center;
+}
+
+.banner_indicator {
+    margin: 0;
+    list-style: none;
+}
+
+.banner_indicator li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.banner_selected,
+.banner_unselected {
+    width: 26px;
+    height: 26px;
+    border-radius: 13px;
+}
+
+.banner_selected {
+    background: gray;
+}
+
+.banner_unselected {
+    background: white;
+}
+
+.attain_more_collections_container {
+    height: 756px;
+    background: #ffffd5;
+}
+
+.attain_more_collections_top_info {
+    width: 992px;
+    margin: 0 auto;
+    padding: 25px 0;
+    /* background-image: url('../Public/imgs/attain_more.png');
+    background-position: left center;
+    background-repeat: no-repeat; */
+}
+
+.attain_more_collections_top_info a {
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.attain_more_collections_content {
+    width: 968px;
+    margin: 0 auto;
+}
+
+.attain_more_collections_content_container li {
+    list-style: none;
+}
+
+.attain_more_collections_content_container div {
+    font-size: 48px;
+    line-height: 142px;
+    height: 142px;
+    margin: 24px 0;
+    letter-spacing: 8px;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.content_item1 {
+    background-color: #f3aa1f;
+    background-image: url('../Public/imgs/apply_background.png'), url('../Public/imgs/apply_manpic.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: -20px -20px, 98% 50%;
+}
+
+.content_item2 {
+    background-color: #f6510f;
+    background-image: url('../Public/imgs/share_background.png'), url('../Public/imgs/share_manpic.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: -60px -10px, 98% 50%;
+}
+
+.content_item3 {
+    background-color: #e9221d;
+    background-image: url('../Public/imgs/wishlist_background.png'), url('../Public/imgs/wish_list_manpic.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: -20px -20px, 98% 50%;
+}
+
+.attain_more_collections_content_container span {
+    position: relative;
+    left: 22%;
+}
+

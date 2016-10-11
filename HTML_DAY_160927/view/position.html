@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>position</title>
+        <style type="text/css" media="screen">
+        /* *
+        1、什么是定位
+		解释：把一个元素按照某一种方式放到页面的某一个地方。
+		2、定位的语法
+		position: static|relative|absolute|fixed|inherit
+		3、定位之后可以设置的四个属性值
+		top:元素距离顶部界位置
+		bottom:元素距离底部边界位置
+		left:元素距离左边界位置
+		right:元素距离右边界位置
+
+		z-index:设置元素的堆叠顺序，数值越大显示优先度越高
+
+		1、什么是相对定位
+
+		2、特点：
+		不脱离文档流，原有位置空间被保留
+		针对自身位置进行定位
+		不影响元素本身属性
+		注意：
+		1、如果一个定位元素，同时设置了top和bottom，top优先，同时设置left和right是，英语网页中left优先，阿拉伯语言中right优先度更高
+		3、如果一个元素设置了相对定位（甚至甚至了偏移），其他元素在排版时参考的依然是那个元素的原有位置。
+		*/
+		.out{
+			width: 600px;
+			height: 600px;
+			border: 4px solid red;
+		}
+		.out div{
+			width: 200px;
+			position: relative;
+			left: 100px;
+			height: 200px;
+			border: 4px solid blue;
+			display: inline-block;
+		}
+        </style>
+    </head>
+
+    <body>
+    <div class="out">
+    	<div>
+
+    	</div>
+    	<div>
+
+    	</div>
+    </div>
+    </body>
+
+</html>

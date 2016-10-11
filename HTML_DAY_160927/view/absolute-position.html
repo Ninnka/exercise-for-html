@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>absolute-position</title>
+        <style type="text/css" media="screen">
+        /**
+		 * 1、绝对定位的定义
+		 * 它是相对非static定位的父元素来进行定位的，被定位的元素会完全脱离文档流，然后我们可以通过left，right，top，
+		 * bottom来调整元素。
+		 * 特点：
+		 * 1、完全脱离文档流
+		 * 2、提升层级整级
+		 * 3、如果所有父级中没有非static定位的元素，则以body为定位标准
+		 * 4、绝对定位一般配合相对定位使用，相对定位做父级，绝对定位做子级
+		 * 5、支持所有的css样式
+		 * 6、定位元素层级的命令 z-index
+		 * 7、如果绝对定位的子级有浮动，可以不做清除浮动
+		 *
+		 *
+		 * 1、如果元素没有固定的width和height，却同时又top，left，right，bottom，那么该元素将占据迟了四条边距之外的所有空间
+		 * 2、如果元素没有固定的height，但是有width，却同时又top，bottom以外的属性，那么元素将铺满顶部到底部的部分
+		 * 3、如果元素没有固定的width，但是有height，却同时又left，right以外的属性，那么元素将铺满从左到右的部分
+		 * 4、如果只设置了top，那么元素只会做垂直方向的移动，其他同理
+		 */
+        </style>
+    </head>
+
+    <body>
+        <div>
+        </div>
+    </body>
+
+</html>

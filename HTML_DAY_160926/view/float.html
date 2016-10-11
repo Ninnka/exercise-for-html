@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>float</title>
+    <style type="text/css" media="screen">
+    div {
+        width: 200px;
+        height: 200px;
+    }
+
+    .class1 {
+        background-color: red;
+        float: left
+    }
+
+    .class2 {
+        background-color: blue;
+        width: 300px;
+    }
+
+    .class3 {
+        background-color: green;
+        width: 400px;
+    }
+
+    .a {
+        background: yellow;
+    }
+
+    .b {
+        background: purple;
+    }
+    .c{
+    	width: 100px;
+    	height: 100px;
+		background-color: #453484;
+		float: left;
+    }
+    .d{
+    	width: 200px;
+    	height: 200px;
+		background-color: #874652;
+    }
+    .span_1{
+    	width: 100px;
+    	height: 100px;
+		background-color: #453484;
+		float: left;
+    }
+    .span_2{
+    	width: 200px;
+    	height: 200px;
+		background-color: #874652;
+    }
+
+    .wrap{
+      width: 600px;
+      height: 600px;
+    }
+
+    div{
+      width: 160px;
+      height: 300px;
+      background: purple;
+    }
+
+    .class_div_1{
+      float: left;
+      background: red;
+
+    }
+    .class_div_2{
+      float: left;
+      background: blue;
+    }
+    .class_div_3{
+      float: right;
+      background: #856720;
+
+    }
+    .class_div_4{
+      float: right;
+      background: #114906;
+
+
+    }
+    </style>
+</head>
+
+<body>
+    <!-- 1、什么是浮动？ 浮动的框可以向左向右移动，直到它的外边缘碰到块级元素或父容器的包含块边框 2、float语法： float: left|right|none|inherit 3、浮动的特性： 1-支持所有÷的css样式 2-内容撑开宽度 3-排在一排 4-脱离文档流 5-提升层级半级 注意：设置了float属性的元素的display属性会变成inline-block； -->
+    <!-- 结论
+    1.没有设置浮动的元素会填充浮动元素遗留下来的空间
+    2.浮动元素会跟非浮动元素发生重叠
+    3.使用flaot脱离文档流时，其他盒子会巫师这个元素，单盒子里面的内容 -->
+    <!-- 2、如果块级元素设置了float属性，会对其后方没有设置float行内元素或内敛块状元素 -->
+    <!-- <div class="class1">我是块级元素1，设置了向左浮动</div>
+	<div class="class2">我是块级元素2，没有设置float</div>
+	<div class="class3">我是块级元素3，没有设置float</div> -->
+<!--     <hr/>
+    <div class="a">
+        我是块级元素，且设置了float
+    </div>
+    <span class="b">我是行内元素，没有设置float</span> -->
+    <!-- 结论：b会紧跟在a的后面，并且b会根据自身内联元素的特点来确定时候换行，常用于文字环绕 -->
+    <!-- 3、假如当前元素为行内元素且设置浮动，对后面的为设置float的块级元素的影响 -->
+
+    <!-- <span class="c">
+		我是设置了float的span_c
+	</span>
+    <div class="d">
+		我是设置了float的div_d
+    </div> -->
+    <!-- 结论：1、行内元素设置了浮动，宽高可以设置了
+    2、元素变成了inline-block，脱了文档流，原有的空间被没有设置float的元素占据 -->
+
+    <!-- 4、假如当前元素是行内元素切设置了浮动，对后面未设置float的行内元素的影响 -->
+    <!-- <span class="span_1">我是设置了float的span——1</span>
+    <span class="span_2">我是设置了float的span——2</span> -->
+
+
+
+
+    <!-- 3、浮动框与不同方向框可以重叠 -->
+    <!-- 解释：同一行中不同方向的浮动框不能够有互相重叠的现象。 -->
+    <div class="wrap">
+      <div class="class_div_1"></div>
+      <div class="class_div_2"></div>
+      <div class="class_div_3"></div>
+      <div class="class_div_4"></div>
+    </div>
+
+
+    <!-- 4、浮动框外顶边界不能溢出包含快 -->
+
+</body>
+
+</html>
