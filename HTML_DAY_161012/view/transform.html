@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>transform</title>
+        <style type="text/css" media="screen">
+        	div{
+        		width: 200px;
+        		height: 200px;
+        		display: inline-block;
+        		margin: 20px auto;
+        		background: red;
+        		text-align: center;
+        		line-height: 200px;
+        		font-size: 24px;
+        	}
+        	#div3,#div4{
+        		-webkit-transform: rotate(30deg);
+        		   -moz-transform: rotate(30deg);
+        		    -ms-transform: rotate(30deg);
+        		     -o-transform: rotate(30deg);
+        		        transform: rotate(30deg);
+        	}
+        	#div5,#div6{
+        		-webkit-transform: scale(0.5);
+        		   -moz-transform: scale(0.5);
+        		    -ms-transform: scale(0.5);
+        		     -o-transform: scale(0.5);
+        		        transform: scale(0.5);
+        	}
+        	#div7,#div8{
+        		-webkit-transform: skew(30deg,-60deg);
+        		   -moz-transform: skew(30deg,-60deg);
+        		    -ms-transform: skew(30deg,-60deg);
+        		     -o-transform: skew(30deg,-60deg);
+        		        transform: skew(30deg,-60deg);
+        	}
+        </style>
+    </head>
+
+    <body>
+        <div id="div1">div_1 未变形</div>
+        <div id="div2">div_2 未变形</div>
+        <hr>
+        <div id="div3">div_3 旋转30°</div>
+        <div id="div4">div_4 旋转30°</div>
+        <hr>
+        <div id="div5">div_5 缩放0.5</div>
+        <div id="div6">div_6 缩放0.5</div>
+        <hr>
+        <div id="div7">div_7 倾斜</div>
+        <div id="div8">div_8 倾斜</div>
+        <hr>
+        <div id="div9">div_9</div>
+        <div id="div10">div_10</div>
+    </body>
+
+</html>

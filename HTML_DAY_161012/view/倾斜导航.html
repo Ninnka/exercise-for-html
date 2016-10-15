@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>倾斜导航</title>
+        <style type="text/css" media="screen">
+        	.out{
+        		width: 1200px;
+        		height: 800px;
+        		margin: 0 auto;
+        		border: 1px solid red;
+        		text-align: center;
+        		padding-top: 100px;
+        	}
+        	.nav_item{
+        		display: inline-block;
+        		width: 200px;
+        		height: 100px;
+        		line-height: 100px;
+        		text-align: center;
+        		background: blue;
+        		color: white;
+        		-webkit-transform: skew(60deg,0deg);
+        		   -moz-transform: skew(60deg,0deg);
+        		    -ms-transform: skew(60deg,0deg);
+        		     -o-transform: skew(60deg,0deg);
+        		        transform: skew(60deg,0deg);
+        	}
+        	.nav_item span{
+        		display: inline-block;
+        		-webkit-transform: skew(-60deg,0deg);
+        		   -moz-transform: skew(-60deg,0deg);
+        		    -ms-transform: skew(-60deg,0deg);
+        		     -o-transform: skew(-60deg,0deg);
+        		        transform: skew(-60deg,0deg);
+        	}
+        </style>
+    </head>
+
+    <body>
+    	<div class="out">
+    		<div class="nav_item">
+    			<span class="nav_title">nav_1</span>
+    		</div>
+    		<div class="nav_item">
+    			<span class="nav_title">nav_2</span>
+    		</div>
+    		<div class="nav_item">
+    			<span class="nav_title">nav_3</span>
+    		</div>
+    		<div class="nav_item">
+    			<span class="nav_title">nav_4</span>
+    		</div>
+    	</div>
+    </body>
+
+</html>

@@ -1,0 +1,22 @@
+/*
+* @Author: lan
+* @Date:   2016-10-13 16:02:09
+* @Last Modified by:   lan
+* @Last Modified time: 2016-10-13 16:05:19
+*/
+.swiper-container {
+    width: 1200px;
+    height: 600px;
+
+    color: white;
+    text-align: center;
+}
+.slide_1{
+	background: red;
+}
+.slide_2{
+	background: green;
+}
+.slide_3{
+	background: blue;
+}

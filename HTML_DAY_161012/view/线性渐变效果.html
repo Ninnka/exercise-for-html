@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>线性渐变效果</title>
+        <style type="text/css" media="screen">
+        	div{
+        		width: 1000px;
+        		height: 600px;
+        		font-size: 100px;
+        		text-align: center;
+        		margin: 10px auto;
+        		line-height: 600px;
+        		color: rgba(255, 255, 255,0.3);
+				transition: 2.5s;
+				-webkit-background-clip: text;
+        	}
+        	div:hover{
+        		background-position: 800px;
+        	}
+        	.div1{
+        		/* 颜色从下往上渐变 */
+        		/* background: #182736; */
+        		background-image: linear-gradient(135deg,#716510 30%,#875108 80%,#862610 100%);
+        		background-image: -webkit-linear-gradient(135deg,#716510 30%,#875108 80%,#862610 100%);
+        		background-image: -moz-linear-gradient(135deg,#716510 30%,#875108 80%,#862610 100%);
+        	}
+
+        	.textgradient{
+        		background-image: linear-gradient(135deg,#716510 20%,#875108 40%,#862610 60%, #751912 80%, #577102 100%);
+        		background-image: -webkit-linear-gradient(135deg,#716510 20%,#875108 40%,#862610 60%, #751912 80%, #577102 100%);
+        		background-image: -moz-linear-gradient(135deg,#716510 20%,#875108 40%,#862610 60%, #751912 80%, #577102 100%);
+        	}
+        </style>
+    </head>
+
+    <body>
+    	<!-- 1、线性渐变语法
+    	background -image: liner-gradient(direction, color [distance], color [distance],...)
+    	direction（渐变方向）：
+		（to） left：渐变过程从右向左
+		（to）right：从左到右
+		（to） top：从下到上
+		（to） bottom：从上到下
+		bottom right：左上到右下
+		top left：右下到左上
+		left： 0deg
+		right：180deg
+		top：90deg
+		bottom：270deg
+
+		color：颜色
+		颜色位置：用小数点（0-1）或百分比表示，指定颜色位置比例 -->
+<!-- 		<div class="div1">
+
+		</div> -->
+
+		<div class="textgradient">
+			textgradient
+		</div>
+    </body>
+
+</html>

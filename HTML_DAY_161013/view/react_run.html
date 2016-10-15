@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>run</title>
+        <style type="text/css" media="screen">
+        	.wrapper{
+				position: relative;
+				width: 1000px;
+				height: 1000px;
+				border: 1px solid red;
+        	}
+        	.react{
+				width: 100px;
+				height: 100px;
+				position: absolute;
+				background: blue;
+				animation: reactrun 8s ease-in-out 0s infinite normal;
+        	}
+        	@-webkit-keyframes reactrun{
+        		0%{
+					top: 0;
+					left: 0;
+        		}
+        		25%{
+        			top: 0;
+					left: 900px;
+        		}
+        		50%{
+					top: 900px;
+					left: 900px;
+        		}
+        		75%{
+					left: 0;
+					top: 900px;
+        		}
+        		100%{
+					top: 0;
+					left: 0;
+        		}
+        	}
+        </style>
+    </head>
+
+    <body>
+    	<div class="wrapper">
+    		<div class="react">
+
+    		</div>
+    	</div>
+    </body>
+
+</html>

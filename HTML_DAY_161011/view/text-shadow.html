@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>text-shadow</title>
+        <style type="text/css" media="screen">
+        	div{
+        		width: 200px;
+        		line-height: 200px;
+        		font-size: 60px;
+				text-align: center;
+				color: #789671;
+				border: 1px solid black;
+				margin: 10px auto;
+				/* 多个阴影用逗号隔开 */
+				text-shadow: 0px 1px 2px #789678,
+							 0px 2px 2px #881190,
+							 0px 3px 2px #687162,
+							 0px 4px 2px #017563;
+        	}
+        	#div1{
+        		text-shadow: 10px 10px 5px red;
+        	}
+        	#div2{
+        		text-shadow: 5px 3px 2px #896785;
+        	}
+        	#div3{
+        		text-shadow: 20px 2px 1px #789678;
+        	}
+        	#div4{
+        		text-shadow: 30px 10px 3px #881190;
+        	}
+        </style>
+    </head>
+
+    <body>
+    	<!--
+    	text-shadow: x-offset y-offset 模糊半径 颜色
+    	1、x-offset: x轴的延生距离
+    	2、y-offset：y轴的延生距离
+    	3、模糊半径：正值
+    	4、颜色：
+    	-->
+    	<div id="div1">div1</div>
+    	<div id="div2">div2</div>
+    	<div id="div3">div3</div>
+    	<div id="div4">div4</div>
+    	<div id="div5">div5</div>
+    	<div id="div6">div6</div>
+    	<div id="div7">div7</div>
+    	<div id="div8">div8</div>
+    	<div id="div9">div9</div>
+    	<div id="div10">div10</div>
+    </body>
+
+</html>

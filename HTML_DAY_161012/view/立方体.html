@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>立方体</title>
+        <style type="text/css" media="screen">
+        body {
+            background: black;
+        }
+
+        .wrapper {
+            width: 400px;
+            height: 400px;
+            margin: 200px auto;
+            -webkit-transition: all 4s;
+            -moz-transition: all 4s;
+            -ms-transition: all 4s;
+            -o-transition: all 4s;
+            transition: all 4s;
+            position: relative;
+            transform-style: preserve-3d;
+        }
+
+        .big {
+
+        }
+
+        .small {
+            position: absolute;
+            left: 100px;
+            top: 100px;
+
+        }
+
+        .wrapper:hover {
+            -webkit-transform: rotateX(360deg) rotateY(360deg);
+            -moz-transform: rotateX(360deg) rotateY(360deg);
+            -ms-transform: rotateX(360deg) rotateY(360deg);
+            -o-transform: rotateX(360deg) rotateY(360deg);
+            transform: rotateX(360deg) rotateY(360deg);
+        }
+
+        .react_item {
+            opacity: 0.3;
+            text-align: center;
+            line-height: 400px;
+            position: absolute;
+            width: 400px;
+            color: white;
+            font-size: 80px;
+            height: 400px;
+            border: 5px solid green;
+        }
+
+        .react_item_small {
+            opacity: 0.3;
+            text-align: center;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            font-size: 60px;
+            color: white;
+            border: 5px solid blue;
+            position: absolute;
+        }
+
+        #div3 {
+            /* background: #12AD12; */
+            -webkit-transform: translateZ(200px);
+            -moz-transform: translateZ(200px);
+            -ms-transform: translateZ(200px);
+            -o-transform: translateZ(200px);
+            transform: translateZ(200px);
+        }
+
+        #div4 {
+            /* background: #12AD12; */
+            -webkit-transform: translateZ(-200px);
+            -moz-transform: translateZ(-200px);
+            -ms-transform: translateZ(-200px);
+            -o-transform: translateZ(-200px);
+            transform: translateZ(-200px);
+        }
+
+        #div6 {
+            /* background: #135783; */
+            -webkit-transform: translateX(200px) rotateY(90deg);
+            -moz-transform: translateX(200px) rotateY(90deg);
+            -ms-transform: translateX(200px) rotateY(90deg);
+            -o-transform: translateX(200px) rotateY(90deg);
+            transform: translateX(200px) rotateY(90deg);
+        }
+
+        #div5 {
+            /* background: #135783; */
+            -webkit-transform: translateX(-200px) rotateY(-90deg);
+            -moz-transform: translateX(-200px) rotateY(-90deg);
+            -ms-transform: translateX(-200px) rotateY(-90deg);
+            -o-transform: translateX(-200px) rotateY(-90deg);
+            transform: translateX(-200px) rotateY(-90deg);
+        }
+
+        #div2 {
+            /* background: #892078; */
+            -webkit-transform: translateY(200px) rotateX(90deg);
+            -moz-transform: translateY(200px) rotateX(90deg);
+            -ms-transform: translateY(200px) rotateX(90deg);
+            -o-transform: translateY(200px) rotateX(90deg);
+            transform: translateY(200px) rotateX(90deg);
+        }
+
+        #div1 {
+            /* background: #892078; */
+            -webkit-transform: translateY(-200px) rotateX(-90deg);
+            -moz-transform: translateY(-200px) rotateX(-90deg);
+            -ms-transform: translateY(-200px) rotateX(-90deg);
+            -o-transform: translateY(-200px) rotateX(-90deg);
+            transform: translateY(-200px) rotateX(-90deg);
+        }
+
+        #div7 {
+            -webkit-transform: translateY(-100px) rotateX(-90deg);
+            -moz-transform: translateY(-100px) rotateX(-90deg);
+            -ms-transform: translateY(-100px) rotateX(-90deg);
+            -o-transform: translateY(-100px) rotateX(-90deg);
+            transform: translateY(-100px) rotateX(-90deg);
+        }
+
+        #div8 {
+            -webkit-transform: translateY(100px) rotateX(90deg);
+            -moz-transform: translateY(100px) rotateX(90deg);
+            -ms-transform: translateY(100px) rotateX(90deg);
+            -o-transform: translateY(100px) rotateX(90deg);
+            transform: translateY(100px) rotateX(90deg);
+        }
+
+        #div9 {
+            -webkit-transform: translateZ(100px);
+            -moz-transform: translateZ(100px);
+            -ms-transform: translateZ(100px);
+            -o-transform: translateZ(100px);
+            transform: translateZ(100px);
+        }
+
+        #div10 {
+            -webkit-transform: translateZ(-100px);
+            -moz-transform: translateZ(-100px);
+            -ms-transform: translateZ(-100px);
+            -o-transform: translateZ(-100px);
+            transform: translateZ(-100px);
+        }
+
+        #div11 {
+            -webkit-transform: translateX(-100px) rotateY(-90deg);
+            -moz-transform: translateX(-100px) rotateY(-90deg);
+            -ms-transform: translateX(-100px) rotateY(-90deg);
+            -o-transform: translateX(-100px) rotateY(-90deg);
+            transform: translateX(-100px) rotateY(-90deg);
+        }
+
+        #div12 {
+            -webkit-transform: translateX(100px) rotateY(90deg);
+            -moz-transform: translateX(100px) rotateY(90deg);
+            -ms-transform: translateX(100px) rotateY(90deg);
+            -o-transform: translateX(100px) rotateY(90deg);
+            transform: translateX(100px) rotateY(90deg);
+        }
+        </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="big">
+                <div class="react_item" id="div1">上</div>
+                <div class="react_item" id="div2">下</div>
+                <div class="react_item" id="div3">前</div>
+                <div class="react_item" id="div4">后</div>
+                <div class="react_item" id="div5">左</div>
+                <div class="react_item" id="div6">右</div>
+            </div>
+            <div class="small">
+                <div class="react_item_small" id="div7">1</div>
+                <div class="react_item_small" id="div8">2</div>
+                <div class="react_item_small" id="div9">3</div>
+                <div class="react_item_small" id="div10">4</div>
+                <div class="react_item_small" id="div11">5</div>
+                <div class="react_item_small" id="div12">6</div>
+            </div>
+        </div>
+    </body>
+
+</html>

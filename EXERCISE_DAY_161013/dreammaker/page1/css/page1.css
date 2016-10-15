@@ -1,0 +1,429 @@
+/*
+* @Author: Ninnka
+* @Date:   2016-10-13 17:09:56
+* @Last Modified by:   Ninnka
+* @Last Modified time: 2016-10-14 08:57:03
+*/
+
+html,
+body {
+    height: 100%;
+}
+
+#root {
+    background: url('../public/imgs/bg.png');
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    overflow: hidden;
+}
+
+.content_logo_wrapper {
+    position: absolute;
+    top: 18%;
+    width: 525px;
+    height: 434px;
+    left: 50%;
+    margin-left: -262.5px;
+    overflow: hidden;
+}
+
+.logo_behind {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.logo_behind img {
+    position: absolute;
+    left: 0;
+}
+
+.logo_behind img:nth-child(1) {
+    height: 100%;
+    width: auto;
+    left: -500px;
+    top: -200px;
+    animation: logo_behind_red 1s linear 2s forwards;
+}
+
+@-webkit-keyframes logo_behind_red {
+    0% {
+        left: -500px;
+        top: -200px;
+    }
+    100% {
+        left: 0;
+        top: 0;
+    }
+}
+
+.logo_behind img:nth-child(2) {
+    top: -600px;
+    right: -600px;
+    width: 100%;
+    animation: logo_behind_blue 1s linear 2s forwards;
+}
+
+@-webkit-keyframes logo_behind_blue {
+    0% {
+        top: -600px;
+        right: -600px;
+    }
+    100% {
+        left: 0;
+        top: 0;
+    }
+}
+
+.logo_behind img:nth-child(3) {
+    bottom: -800px;
+    opacity: 0;
+    width: 100%;
+    left: 0;
+    animation: logo_behind_yellow 1s linear 2s forwards;
+}
+
+@-webkit-keyframes logo_behind_yellow {
+    0% {
+        bottom: -800px;
+        opacity: 0;
+    }
+    100% {
+        bottom: 0px;
+        opacity: 1;
+    }
+}
+
+.logo_above {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.logo_above img {
+    position: absolute;
+}
+
+.logo_above img:nth-child(1) {
+    height: 29%;
+    width: auto;
+    left: 0px;
+    top: 50%;
+    margin-top: -12%;
+}
+
+.logo_above img:nth-child(2) {
+    left: 18.5%;
+    top: 50%;
+    height: 52%;
+    width: auto;
+    margin-top: -22.5%;
+}
+
+.logo_above img:nth-child(3) {
+    left: 23%;
+    top: 50%;
+    height: 9%;
+    width: auto;
+    margin-top: -8%;
+}
+
+.logo_above img:nth-child(4) {
+    left: 35%;
+    top: 0;
+    height: 85%;
+    width: 33%;
+}
+
+.logo_above img:nth-child(5) {
+    left: 51%;
+    top: 0;
+    height: 54%;
+    width: 14%;
+}
+
+.logo_above img:nth-child(6) {
+    right: 0;
+    bottom: 0;
+    height: 170px;
+    width: 407px;
+}
+
+.logo_alpha {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.logo_alpha img {
+    position: absolute;
+}
+
+.logo_alpha img:nth-child(1) {
+    height: 85px;
+    width: auto;
+    left: 4%;
+    top: 50%;
+    margin-top: -42px;
+}
+
+.logo_alpha img:nth-child(2) {
+    height: 62px;
+    width: 80px;
+    left: 35%;
+    top: 50%;
+    margin-top: -60px;
+}
+
+.logo_alpha img:nth-child(3) {
+    height: 300px;
+    width: 430px;
+    left: 18%;
+    top: 50%;
+    margin-top: -70px;
+}
+
+.logo_alpha img:nth-child(4) {
+    width: 67.5px;
+    left: 23%;
+    bottom: 0;
+    height: 54px;
+}
+
+.logo_alpha img:nth-child(5) {
+    width: 67.5px;
+    left: 38%;
+    bottom: 0;
+    height: 54px;
+}
+
+.logo_alpha img:nth-child(6) {
+    width: 67.5px;
+    left: 53%;
+    bottom: 0;
+    height: 54px;
+}
+
+.logo_alpha img:nth-child(7) {
+    width: 67.5px;
+    left: 68%;
+    bottom: 0;
+    height: 54px;
+}
+
+.logo_alpha img:nth-child(8) {
+    width: 67.5px;
+    left: 83%;
+    bottom: 0;
+    height: 54px;
+}
+
+.pull_button {
+    position: absolute;
+    bottom: 3%;
+    animation: pull_button_float 2s ease 0s infinite normal;
+    margin-left: -27px;
+}
+
+@-webkit-keyframes pull_button_float {
+    0% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+    50% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+}
+
+.music_music {
+    position: absolute;
+    right: 3%;
+    bottom: 3%;
+    animation: musicon_float 4s linear 0s infinite normal;
+}
+
+@-webkit-keyframes musicon_float {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.title_small_wrapper {
+    position: absolute;
+    width: 100%;
+    height: 35px;
+    opacity: 0;
+    bottom: -10%;
+    animation: title_small 1.2s linear 4.8s forwards;
+}
+
+@-webkit-keyframes title_small {
+    0% {
+        /* width: 150%; */
+        opacity: 0;
+        bottom: -10%;
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+    100% {
+        /* width: 100%; */
+        opacity: 1;
+        bottom: 21.5%;
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+}
+
+.title_small_wrapper img {
+    width: auto;
+    height: 100%;
+}
+
+.title_big_wrapper {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    opacity: 0;
+    bottom: -16%;
+    animation: title_big 1s linear 5s forwards;
+}
+
+@-webkit-keyframes title_big {
+    0% {
+        opacity: 0;
+        bottom: -16%;
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+    100% {
+        bottom: 13%;
+        opacity: 1;
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+}
+
+.title_big_wrapper img {
+    width: auto;
+    height: 100%
+}
+
+.static_star_wrapper {
+    position: absolute;
+    height: auto;
+}
+
+.static_star_wrapper img {
+    width: 100%;
+}
+
+.blue_static_star {
+    left: -500px;
+    bottom: 6%;
+    text-align: left;
+    width: 600px;
+    animation: blue_static_star 1s linear 4.8s forwards;
+}
+
+@-webkit-keyframes blue_static_star {
+    0% {
+        left: -500px;
+        bottom: 6%;
+    }
+    100% {
+        left: -170px;
+        bottom: 9%;
+    }
+}
+
+.red_static_star {
+    right: -400px;
+    bottom: 1%;
+    text-align: right;
+    width: 700px;
+    animation: red_static_star 1s linear 4.8s forwards;
+}
+
+@-webkit-keyframes red_static_star {
+    0% {
+        right: -400px;
+        bottom: 1%;
+    }
+    100% {
+        right: -20px;
+        bottom: -2%;
+    }
+}
+
+.dynamic_star {
+    position: absolute;
+    width: 307px;
+    height: 105px;
+}
+
+.yellow_metro {
+    right: -300px;
+    top: 300px;
+    animation: yellow_metro 2s linear 2.3s infinite normal;
+}
+
+@-webkit-keyframes yellow_metro {
+    0% {
+        right: -300px;
+        top: 300px;
+    }
+    100% {
+        right: 120%;
+        top: -200px;
+    }
+}
+
+.red_metro {
+    left: -300px;
+    bottom: 400px;
+    animation: red_metro 2s linear 3.2s infinite normal;
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+}
+
+@-webkit-keyframes red_metro {
+    0% {
+        left: -300px;
+        bottom: 300px;
+    }
+    100% {
+        left: 120%;
+        bottom: 0px;
+    }
+}
+
+.green_metro {
+    right: -300px;
+    bottom: 240px;
+    animation: green_metro 2s linear 3.6s infinite normal;
+}
+
+@-webkit-keyframes green_metro {
+    0% {
+        right: -300px;
+        bottom: 240px;
+    }
+    100% {
+        right: 120%;
+        bottom: 0px;
+    }
+}
+

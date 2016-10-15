@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>径向渐变</title>
+        <style type="text/css" media="screen">
+        div {
+        	width: 200px;
+        	height: 200px;
+        	font-size: 50px;
+        	line-height: 200px;
+        	text-align: center;
+        }
+        .div_1{
+        	/* 渐变中心为center进行渐变 */
+        	background: -webkit-radial-gradient(center,ellipse farthest-corner, red, blue,red, blue,red, blue,red, blue);
+        }
+        </style>
+    </head>
+
+    <body>
+        <!-- background-image:radial-gradient(position, shape size, start-color, second-color)
+    	position: 默认值center （top， left）等
+    	shape:渐变形状
+    	size：渐变形状大小 -->
+    	<div class="div_1"></div>
+    </body>
+
+</html>

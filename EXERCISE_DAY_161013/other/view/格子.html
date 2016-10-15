@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>index</title>
+        <style>
+        .wrapper {
+            width: 1000px;
+            height: 500px;
+            position: relative;
+            margin: 0 auto;
+            background: darkgray;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .react {
+        	margin: 0 10px;
+			flex-grow: 0;
+            display: inline-block;
+            width: 80px;
+            height: 240px;
+            background: #2222FF;
+            animation: scaleH 2s ease 0s infinite normal;
+        }
+
+        @-webkit-keyframes scaleH {
+            0% {
+                -webkit-transform: scaleY(1.0);
+                transform: scaleY(1.0);
+                background: #2222FF;
+            }
+            40% {
+                -webkit-transform: scaleY(1.5);
+                transform: scaleY(1.5);
+                background: #6666FF;
+            }
+            80%{
+            	background: #AAAAFF;
+            }
+            100% {
+            	background: #2222FF;
+                -webkit-transform: scaleY(1.0);
+                transform: scaleY(1.0);
+            }
+        }
+        .wrapper div:nth-child(2){
+        	animation-delay: 0.2s;
+        }
+        .wrapper div:nth-child(3){
+        	animation-delay: 0.4s;
+        }
+        .wrapper div:nth-child(4){
+        	animation-delay: 0.6s;
+        }
+        .wrapper div:nth-child(5){
+        	animation-delay: 0.8s;
+        }
+        .wrapper div:nth-child(6){
+        	animation-delay: 1.0s;
+        }
+        </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="react"></div>
+            <div class="react"></div>
+            <div class="react"></div>
+            <div class="react"></div>
+            <div class="react"></div>
+            <div class="react"></div>
+        </div>
+    </body>
+
+</html>

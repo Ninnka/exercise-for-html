@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>car</title>
+        <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper {
+        	margin: 0 auto;
+            width: 1000px;
+            height: 100%;
+            position: relative;
+            background: url('../public/imgs/bg.png');
+            background-size: cover;
+        }
+
+        .car {
+            position: absolute;
+            width: 100px;
+            height: auto;
+            bottom: 0;
+            left: 0;
+            animation: carrun 6s ease 0s infinite normal;
+        }
+
+        @-webkit-keyframes carrun {
+            0% {
+                bottom: 0;
+                left: 0;
+                -webkit-transform: rotateY(0deg);
+                -moz-transform: rotateY(0deg);
+                -ms-transform: rotateY(0deg);
+                -o-transform: rotateY(0deg);
+                transform: rotateY(0deg);
+            }
+            49% {
+                -webkit-transform: rotateY(0deg);
+                -moz-transform: rotateY(0deg);
+                -ms-transform: rotateY(0deg);
+                -o-transform: rotateY(0deg);
+                transform: rotateY(0deg);
+            }
+            50% {
+                left: 900px;
+                -webkit-transform: rotateY(180deg);
+                -moz-transform: rotateY(180deg);
+                -ms-transform: rotateY(180deg);
+                -o-transform: rotateY(180deg);
+                transform: rotateY(180deg);
+            }
+            99% {
+                -webkit-transform: rotateY(180deg);
+                -moz-transform: rotateY(180deg);
+                -ms-transform: rotateY(180deg);
+                -o-transform: rotateY(180deg);
+                transform: rotateY(180deg);
+            }
+            100% {
+                left: 0px;
+                -webkit-transform: rotateY(0deg);
+                -moz-transform: rotateY(0deg);
+                -ms-transform: rotateY(0deg);
+                -o-transform: rotateY(0deg);
+                transform: rotateY(0deg);
+            }
+        }
+        </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <img src="../public/imgs/car.png" alt="car" class="car">
+        </div>
+    </body>
+
+</html>

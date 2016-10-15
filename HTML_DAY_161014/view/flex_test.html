@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>flex_test</title>
+        <style>
+			.container{
+				width: 900px;
+				height: 500px;
+				margin: 0 auto;
+			}
+			#flex_box{
+				border: 1px solid blue;
+				display: flex;
+				flex-direction: row;
+				flex-wrap: nowrap;
+				align-items: center;
+				justify-content: space-between;
+			}
+			#flex_box li{
+				width: 200px;
+				height: 200px;
+				text-align: center;
+				list-style: none;
+				border: 1px solid red;
+			}
+			#flex_box_2{
+				border: 1px solid blue;
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				align-items: center;
+				justify-content: space-between;
+			}
+			#flex_box_2 li{
+				width: 200px;
+				height: 200px;
+				text-align: center;
+				list-style: none;
+				border: 1px solid red;
+			}
+			#flex_box_3{
+				border: 1px solid blue;
+				display: flex;
+				flex-direction: row-reverse;
+				flex-wrap: wrap-reverse;
+				align-items: center;
+				justify-content: space-between;
+			}
+			#flex_box_3 li{
+				width: 200px;
+				height: 200px;
+				text-align: center;
+				list-style: none;
+				border: 1px solid red;
+			}
+        </style>
+    </head>
+    <body>
+    	<div class="container">
+    		不换行
+    		<hr>
+    		<ul id="flex_box">
+    			<li>li_1</li>
+    			<li>li_2</li>
+    			<li>li_3</li>
+    			<li>li_4</li>
+    		</ul>
+    		<hr>
+    		换行
+    		<hr>
+    		<ul id="flex_box_2">
+    			<li>li_1</li>
+    			<li>li_2</li>
+    			<li>li_3</li>
+    			<li>li_4</li>
+    			<li>li_5</li>
+    		</ul>
+    		<hr>
+    		反过来换行
+    		<hr>
+    		<ul id="flex_box_3">
+    			<li>li_1</li>
+    			<li>li_2</li>
+    			<li>li_3</li>
+    			<li>li_4</li>
+    			<li>li_5</li>
+    		</ul>
+    	</div>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>flex:grow</title>
+        <style>
+        .box li {
+            width: 100px;
+            height: 100px;
+            list-style: none;
+            border: 1px solid red;
+            text-align: center;
+            margin: 0 10px;
+        }
+
+        .box {
+        	margin: 0 auto;
+            padding: 10px 0;
+            display: flex;
+            flex-flow: row nowrap;
+            border: 1px solid blue;
+        }
+
+        .box li:nth-child(4) {
+            order: -2;
+            border: 1px solid purple;
+            /* flex-grow: 1; */
+            flex-shrink: 2;
+        }
+
+        .box li:nth-child(5) {
+            border: 1px solid green;
+            order: -1;
+            /* flex-grow: 1; */
+        }
+        </style>
+    </head>
+
+    <body>
+        <ul class="box">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </body>
+
+</html>

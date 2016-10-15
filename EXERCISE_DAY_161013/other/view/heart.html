@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>heart</title>
+        <style>
+			.wrapper{
+				width: 400px;
+				height: 400px;
+				margin: 200px auto;
+			}
+			.wrapper img{
+				width: 60%;
+				height: auto;
+				animation: heart 0.2s ease 0s infinite normal;
+			}
+			@-webkit-keyframes heart{
+				0%{
+					/* width: 60%; */
+					-webkit-transform: scale(1.0);
+					        transform: scale(1.0);
+				}
+				10%{
+					/* width: 100%; */
+					-webkit-transform: scale(0.9);
+					        transform: scale(0.9);
+				}
+				50%{
+					/* width: 70%; */
+					-webkit-transform: scale(1.3);
+					        transform: scale(1.3);
+				}
+				80%{
+					/* width: 40%; */
+					-webkit-transform: scale(1.1);
+					        transform: scale(1.1);
+				}
+				100%{
+					/* width: 60%; */
+					-webkit-transform: scale(1.0);
+					        transform: scale(1.0);
+				}
+			}
+        </style>
+    </head>
+    <body>
+    	<div class="wrapper">
+			<img src="../public/imgs/heart.png" alt="">
+    	</div>
+    </body>
+</html>
